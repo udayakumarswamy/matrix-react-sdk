@@ -346,14 +346,14 @@ export default class MessageComposer extends React.Component {
             if (!this.state.haveRecording) {
                 controls.push(
                     <UploadButton key="controls_upload" roomId={this.props.room.roomId} />,
-                    <EmojiButton key="emoji_button" addEmoji={this.addEmoji} />,
+                    // <EmojiButton key="emoji_button" addEmoji={this.addEmoji} />,
                 );
             }
 
             if (SettingsStore.getValue(UIFeature.Widgets) &&
                 SettingsStore.getValue("MessageComposerInput.showStickersButton") &&
                 !this.state.haveRecording) {
-                controls.push(<Stickerpicker key="stickerpicker_controls_button" room={this.props.room} />);
+                // controls.push(<Stickerpic    ker key="stickerpicker_controls_button" room={this.props.room} />);
             }
 
             if (SettingsStore.getValue("feature_voice_messages")) {

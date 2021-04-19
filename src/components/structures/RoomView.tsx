@@ -2108,6 +2108,15 @@ export default class RoomView extends React.Component<IProps, IState> {
                                     </div>
                                 </div>
                                 {previewBar}
+                                <div style={{textAlign: 'center'}}>
+                                {/* https://css-tricks.com/line-on-sides-headers/#:~:text=The%20right%20set%20is%20a,insides%20of%20everything%20is%20transparent. */}
+                                    <div>What type of message would you like to send?</div>
+                                    <div style={{padding:'10px'}}>
+                                        <button style={{margin: '10px', padding: '10px'}}>On track!</button>
+                                        <button style={{margin: '10px', padding: '10px'}}>instructions</button>
+                                        <button style={{margin: '10px', padding: '10px'}}>General</button>
+                                    </div>
+                                </div>
                                 {messageComposer}
                             </div>
                         </MainSplit>

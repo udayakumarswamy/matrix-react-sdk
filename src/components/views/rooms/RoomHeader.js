@@ -267,7 +267,7 @@ export default class RoomHeader extends React.Component {
                     { topicElement }
                     { cancelButton }
                     { rightRow }
-                    <RoomHeaderButtons />
+                    {/* <RoomHeaderButtons /> */}
                 </div>
             </div>
         );

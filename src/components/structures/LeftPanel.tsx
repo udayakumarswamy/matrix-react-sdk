@@ -392,13 +392,13 @@ export default class LeftPanel extends React.Component<IProps, IState> {
                     onKeyDown={this.onKeyDown}
                     onSelectRoom={this.selectRoom}
                 />
-                <AccessibleTooltipButton
+                {/* <AccessibleTooltipButton
                     className={classNames("mx_LeftPanel_exploreButton", {
                         mx_LeftPanel_exploreButton_space: !!this.state.activeSpace,
                     })}
                     onClick={this.onExplore}
                     title={_t("Explore rooms")}
-                />
+                /> */}
             </div>
         );
     }
@@ -436,9 +436,10 @@ export default class LeftPanel extends React.Component<IProps, IState> {
 
         return (
             <div className={containerClasses}>
-                {leftLeftPanel}
+                {/* {leftLeftPanel} */}
                 <aside className="mx_LeftPanel_roomListContainer">
-                    {this.renderHeader()}
+                    {/* {this.renderHeader()} */}
+                    <br />
                     {this.renderSearchExplore()}
                     {this.renderBreadcrumbs()}
                     <RoomListNumResults />
