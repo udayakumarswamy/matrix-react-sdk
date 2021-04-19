@@ -20,7 +20,6 @@ limitations under the License.
     flex-direction: column;
 }
 
-
 @keyframes mx_RoomView_fileDropTarget_animation {
     from {
         opacity: 0;
@@ -100,7 +99,6 @@ limitations under the License.
     max-width: 1920px !important;
 }
 
-
 .mx_RoomView .mx_MainSplit {
     flex: 1 1 0;
 }
@@ -114,7 +112,7 @@ limitations under the License.
 
 .mx_RoomView_messagePanelSearchSpinner {
     flex: 1;
-    background-image: url('$(res)/img/typing-indicator-2x.gif');
+    background-image: url("$(res)/img/typing-indicator-2x.gif");
     background-position: center 367px;
     background-size: 25px;
     background-repeat: no-repeat;
@@ -123,11 +121,11 @@ limitations under the License.
 
 .mx_RoomView_messagePanelSearchSpinner::before {
     background-color: $greyed-fg-color;
-    mask: url('$(res)/img/feather-customised/search-input.svg');
+    mask: url("$(res)/img/feather-customised/search-input.svg");
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: 50px;
-    content: '';
+    content: "";
     position: absolute;
     top: 286px;
     left: 0;
@@ -141,7 +139,9 @@ limitations under the License.
     flex: 1;
     min-width: 0;
 
-    .mx_RoomView_messagePanel, .mx_RoomView_messagePanelSpinner, .mx_RoomView_messagePanelSearchSpinner {
+    .mx_RoomView_messagePanel,
+    .mx_RoomView_messagePanelSpinner,
+    .mx_RoomView_messagePanelSearchSpinner {
         order: 2;
     }
 }
@@ -163,7 +163,7 @@ limitations under the License.
     z-index: 1000;
     overflow: hidden;
 
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .mx_RoomView_statusArea_expanded {
@@ -179,6 +179,49 @@ limitations under the License.
     margin-left: 65px;
     border-top: 1px solid $primary-hairline-color;
     height: 1px;
+}
+
+.mx_RoomView_statusAreaBox_notification_wrap {
+    text-align: center;
+}
+
+.mx_RoomView_statusAreaBox_notification_wrap span {
+    display: inline-block;
+    position: relative;
+}
+
+.mx_RoomView_statusAreaBox_notification_wrap span::before,
+.mx_RoomView_statusAreaBox_notification_wrap span::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    border-bottom: 1px solid black;
+    top: 0;
+    width: 250px;
+}
+
+.mx_RoomView_statusAreaBox_notification_wrap span::after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.mx_RoomView_statusAreaBox_notification_wrap span::before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.mx_RoomView_statusAreaBox_notification_buttons_wrap {
+    padding: 10px;
+    text-align: right;
+    padding-right: 100px;
+}
+
+.mx_RoomView_statusAreaBox_notification_button {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #cccc;
+    font-weight: bold;
 }
 
 .mx_RoomView_messageListWrapper {
@@ -248,7 +291,7 @@ hr.mx_RoomView_myReadMarker {
 
 .mx_RoomView_callStatusBar .mx_UploadBar_uploadFilename {
     color: $accent-fg-color;
-    opacity: 1.0;
+    opacity: 1;
 }
 
 .mx_RoomView_inCall .mx_RoomView_statusAreaBox_line {

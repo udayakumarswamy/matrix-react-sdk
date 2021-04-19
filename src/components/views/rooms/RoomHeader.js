@@ -156,7 +156,8 @@ export default class RoomHeader extends React.Component {
 
         const textClasses = classNames('mx_RoomHeader_nametext', { mx_RoomHeader_settingsHint: settingsHint });
         const name =
-            <div className="mx_RoomHeader_name" onClick={this.props.onSettingsClick}>
+            <div className="mx_RoomHeader_name">
+                {/* <div className="mx_RoomHeader_name" onClick={this.props.onSettingsClick}> */}
                 <RoomName room={this.props.room}>
                     {(name) => {
                         const roomName = name || oobName;

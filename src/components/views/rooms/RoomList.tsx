@@ -635,7 +635,7 @@ export default class RoomList extends React.PureComponent<IProps, IState> {
                         aria-label={_t("Rooms")}
                     >
                         {sublists}
-                        {explorePrompt}
+                        {/* {explorePrompt} */}
                     </div>
                 )}
             </RovingTabIndexProvider>
